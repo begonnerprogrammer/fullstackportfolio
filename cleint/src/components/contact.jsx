@@ -4,12 +4,13 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
 import "../css/contact.css"
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 const Contact = () => {
 const [name,setName]=useState("");
 const [email,setEmail]=useState("");
 const [subject,setSubject]=useState("");
 const [massage,setMassage]=useState("");
+const location=useLocation();
 const navigate=useNavigate();
   const submit=async(e)=>{
     e.preventDefault();
@@ -34,6 +35,7 @@ const navigate=useNavigate();
       console.log("Valid")
       navigate("/")
       alert("Thank You! Form Submitted")
+      window.location.reload()
     }
   }
 
