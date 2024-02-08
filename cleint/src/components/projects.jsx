@@ -1,0 +1,56 @@
+import React from 'react'
+import "../css/experience.css"
+import {motion} from "framer-motion"
+import { Link } from 'react-router-dom'
+const Projects = () => {
+  const projects=[
+    {
+       img:"./images/mern.jpg",
+       title:"COMPLETE MERN-STACK APP",
+       description:"This is a complete Mern-Stack application with Sign-up Functionality, Login  Functionality,Logout Functionality, Jwt Authentication and Verification Functionality.At also include Uplaoding Post Functionality,Edit Post Functionality, Delete Post Functionality. In short, it is a complete project of MERN-STACK DEVELOMPMENT."
+    },
+    {
+      img:"./images/movie2.webp",
+      title:"Movie App using Next.Js",
+      description:"This is a Movie App using Next.js.A complete movie app with Google sign-in Feature using Next-Auth  . Also includes Add movies functionality feature using React Redux."
+    }
+    ,{
+      img:"./images/html-css-js.png",
+      title:"A Website Using Html,css,js,backend",
+      description:"This is a complete App using html ,css , js . Which includes routing functionality using hadlebars."
+    }
+  ];
+  return (
+    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1.5}} className='h-screen  flex relative overflow-hidden flex-col text-left md:flex-row 
+    max-w-full px-10 justify-evenly mx-auto items-center'>
+      <h3 className='absolute top-32   uppercase tracking-[20px] text-gray-700 text-2xl'>
+       Projects
+      </h3>
+      {/* //projects */}
+      <div className=' relative w-full overflow-x-scroll scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#F7AB0A]/80  scroll-smooth  flex overflow-y-hidden snap-x snap-mandatory z-20'>
+        {
+          projects.map((project)=>(
+            <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center  md:p-44 h-screen'>
+              <img src={project.img} className='h-40' ></img>
+             <div className='space-y-4 max-w-6xl px-0 md:px-10 md:space-x-14 snap-center'>
+              <h4 className='text-4xl font-semibold text-center'>
+              <span className='underline decoration-[#F7AB0A]/50'>{project.title}</span>
+              </h4>
+              <p className='text-lg text-center md:text-left'>
+                {
+                  project.description
+                }
+              </p>
+              </div>
+             </div>
+           
+          ))
+        }
+      </div>
+      <div className='w-full absolute top-[50%] bg-gray-400 left-0  h-[500px]  skew-y-12'/>
+ 
+    </motion.div>
+  )
+}
+
+export default Projects
