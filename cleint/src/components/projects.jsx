@@ -6,18 +6,18 @@ const Projects = () => {
   const projects=[
     {
        img:"./images/mern.jpg",
-       title:"COMPLETE MERN-STACK APP",
-       description:"This is a complete Mern-Stack application with Sign-up Functionality, Login  Functionality,Logout Functionality, Jwt Authentication and Verification Functionality.At also include Uplaoding Post Functionality,Edit Post Functionality, Delete Post Functionality. In short, it is a complete project of MERN-STACK DEVELOMPMENT."
+       title:"COMPLETE MERN-STACK BLOG APP",
+       description:`This is a complete Mern-Stack application with Sign-up Functionality, Login  Functionality,Logout Functionality, Jwt Authentication and Verification Functionality.At also include Uplaoding Post Functionality,Edit Post Functionality, Delete Post Functionality. In short, it is a complete project of MERN-STACK DEVELOMPMENT.`
     },
     {
       img:"./images/movie2.webp",
       title:"Movie App using Next.Js",
-      description:"This is a Movie App using Next.js.A complete movie app with Google sign-in Feature using Next-Auth  . Also includes Add movies functionality feature using React Redux."
+      description:"This is a Movie App using Next.js.</br> A complete movie app with Google sign-in Feature using Next-Auth  . Also includes Add movies functionality feature using React Redux."
     }
     ,{
-      img:"./images/html-css-js.png",
-      title:"A Website Using Html,css,js,backend",
-      description:"This is a complete App using html ,css , js . Which includes routing functionality using hadlebars."
+      img:"./images/nodejs.png",
+      title:"A Website Using Html,css,js,nodejs(Express.js)",
+      description:"This is a complete Weather App using html ,css , js.</br> View engine handlebars is used in this app. This app also use partials."
     }
   ];
   return (
