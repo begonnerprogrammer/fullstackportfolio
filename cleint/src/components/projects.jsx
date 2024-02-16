@@ -7,16 +7,19 @@ const Projects = () => {
     {
        img:"./images/mern.jpg",
        title:"COMPLETE MERN-STACK BLOG APP",
-       description:`This is a complete Mern-Stack application with Sign-up Functionality, Login  Functionality,Logout Functionality, Jwt Authentication and Verification Functionality.At also include Uplaoding Post Functionality,Edit Post Functionality, Delete Post Functionality. In short, it is a complete project of MERN-STACK DEVELOMPMENT.`
+       description:`This is a complete Mern-Stack application with Sign-up Functionality, Login  Functionality,Logout Functionality, Jwt Authentication and Verification Functionality.At also include Uplaoding Post Functionality,Edit Post Functionality, Delete Post Functionality. In short, it is a complete project of MERN-STACK DEVELOMPMENT.`,
+       link:"https://github.com/begonnerprogrammer/Blogapp-MERNSTACK-"
     },
     {
       img:"./images/movie2.webp",
       title:"Movie App using Next.Js",
+      link:"https://fullstackmovieapp-react.vercel.app/discover/now_playing",
       description:"This is a Movie App using Next.js.</br> A complete movie app with Google sign-in Feature using Next-Auth  . Also includes Add movies functionality feature using React Redux."
     }
     ,{
       img:"./images/nodejs.png",
       title:"A Website Using Html,css,js,nodejs(Express.js)",
+      link:"https://github.com/begonnerprogrammer/backendweatherapp",
       description:"This is a complete Weather App using html ,css , js.</br> View engine handlebars is used in this app. This app also use partials."
     }
   ];
@@ -30,6 +33,7 @@ const Projects = () => {
       <div className=' relative w-full overflow-x-scroll scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#F7AB0A]/80  scroll-smooth  flex overflow-y-hidden snap-x snap-mandatory z-20'>
         {
           projects.map((project)=>(
+            <Link to={`${project.link}`}>
             <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center  md:p-44 h-screen'>
               <img src={project.img} className='h-40' ></img>
              <div className='space-y-4 max-w-6xl px-0 md:px-10 md:space-x-14 snap-center'>
@@ -43,7 +47,7 @@ const Projects = () => {
               </p>
               </div>
              </div>
-           
+             </Link>
           ))
         }
       </div>
