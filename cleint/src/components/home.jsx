@@ -49,7 +49,7 @@ window.scrollTo({
        </motion.div>
      
    <motion.div className='tabs' initial={{y:600}} animate={{y:0}} transition={{duration:"1.5" ,delay:""}} >
-      <Link to={"#"}><a href="" onClick={()=>scrolltopsection(about)}><h1>ABOUT</h1></a></Link>
+      <Link   to={"#"}><a  href="" onClick={()=>scrolltopsection(about)}><h1>ABOUT</h1></a></Link>
       <Link to={"#"}><a href="" onClick={()=>scrolltopsection(skills)}><h1>SKILLS</h1></a></Link>
       <Link to={"#"}><a href="" onClick={()=>scrolltopsection(projects)}><h1>PROJECTS</h1></a></Link>  
       <Link to={"#"}><a href="" onClick={()=>scrolltopsection(contact)}><h1>CONTACT</h1></a></Link>   

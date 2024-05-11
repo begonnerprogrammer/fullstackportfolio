@@ -13,7 +13,7 @@ const Projects = () => {
     {
       img:"./images/movie2.webp",
       title:"Movie App using Next.Js",
-      link:"https://fullstackmovieapp-react.vercel.app/discover/now_playing",
+      link:"https://github.com/begonnerprogrammer/fullstackmovieapp-react-",
       description:"This is a Movie App using Next.js.</br> A complete movie app with Google sign-in Feature using Next-Auth  . Also includes Add movies functionality feature using React Redux."
     }
     ,{
@@ -33,9 +33,12 @@ const Projects = () => {
       <div className=' relative w-full overflow-x-scroll scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#F7AB0A]/80  scroll-smooth  flex overflow-y-hidden snap-x snap-mandatory z-20'>
         {
           projects.map((project)=>(
-            <Link to={`${project.link}`}>
+           
             <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center  md:p-44 h-screen'>
+               <Link to={`${project.link}`}>
               <img src={project.img} className='h-40' ></img>
+              </Link>
+             
              <div className='space-y-4 max-w-6xl px-0 md:px-10 md:space-x-14 snap-center'>
               <h4 className='text-4xl font-semibold text-center'>
               <span className='underline decoration-[#F7AB0A]/50'>{project.title}</span>
@@ -46,8 +49,9 @@ const Projects = () => {
                 }
               </p>
               </div>
+             
              </div>
-             </Link>
+             
           ))
         }
       </div>

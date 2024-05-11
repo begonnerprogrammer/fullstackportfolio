@@ -332,3 +332,13 @@ transform: translateY(0px);
     color: gray;
     transition: 0.5s;
   }
+
+
+  /* //media queries----------------------------------------------- */
+
+
+  @media (max-width:768px) {
+      .tabs{
+      justify-content: center;
+      }
+  }
