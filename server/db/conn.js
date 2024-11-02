@@ -1,5 +1,6 @@
 const mongoose=require("mongoose");
-
-  mongoose.connect('mongodb://127.0.0.1:27017/form')
+const env=require('dotenv');
+env.config();
+  mongoose.connect(`${process.env.DB}`)
   .then(()=>{console.log("connection succesful")})
   .catch((e)=>{console.log(e)})

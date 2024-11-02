@@ -1,6 +1,7 @@
 const express=require("express");
 const app=express();
 const Collection = require("./schema/model");
+const port=process.env.PORT || 4000;
 app.use(express.json());
 require("./db/conn")
   app.post("/register", (req, res) => {
@@ -16,8 +17,8 @@ require("./db/conn")
             
       })
 
-app.listen(4000,()=>{
-  console.log("server is on the port 4000")
+app.listen(port,()=>{
+  console.log(`server is on the port ${port}`)
 })
 
 
