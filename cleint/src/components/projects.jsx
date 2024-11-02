@@ -30,7 +30,7 @@ const Projects = () => {
        Projects
       </h3>
       {/* //projects */}
-      <div className=' relative w-full overflow-x-scroll scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#F7AB0A]/80  scroll-smooth  flex overflow-y-hidden snap-x snap-mandatory z-20'>
+      <div className=' relative w-full overflow-x-scroll scrollbar scrollbar-track-gray-400/20  scrollbar-thumb-[#000]/80  scroll-smooth  flex overflow-y-hidden snap-x snap-mandatory z-20'>
         {
           projects.map((project)=>(
            
@@ -41,7 +41,7 @@ const Projects = () => {
              
              <div className='space-y-4 max-w-6xl px-0 md:px-10 md:space-x-14 snap-center'>
               <h4 className='text-4xl font-semibold text-center'>
-              <span className='underline decoration-[#F7AB0A]/50'>{project.title}</span>
+              <span className='underline decoration-[#000]/50'>{project.title}</span>
               </h4>
               <p className='text-lg text-center md:text-left'>
                 {

@@ -47,7 +47,7 @@ const navigate=useNavigate();
       <div className='flex flex-col space-y-10 mt-28'>
         <h4 className='text-4xl font-semibold text-center'>
           I have got just what you need.  {""}
-          <span className='decoration-[#F7AB0A] underline'>Lets Talk.</span>
+          <span className='decoration-[#000] underline'>Lets Talk.</span>
         </h4>
         <div className='space-y-10'>
         <div className='flex items-center space-x-5 justify-center'>
@@ -72,7 +72,7 @@ const navigate=useNavigate();
       </div>
       <input value={subject} onChange={(e)=>setSubject(e.target.value)}  placeholder='Subject'  className="placeholder:italic placeholder:text-black contactinput" type="text"  required/>
       <textarea  value={massage} onChange={(e)=>setMassage(e.target.value)}  placeholder='Massage'  className="placeholder:italic placeholder:text-black contactinput" name="" id="" cols="10" rows="2" required></textarea>
-      <button className='bg-[#F7AB0A] hover:bg-[#f7ac0a8e] py-5 px-10 rounded-md text-black font-bold text-lg'>Submit</button>
+      <button className='bg-[#000] hover:bg-[#333] hover:text-[#000] transition ease-in-out delay-100 py-5 px-10 text-white rounded-md  font-bold text-lg'>Submit</button>
     </form>
  
       </div>
