@@ -6,7 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 import "../css/contact.css"
 import { Link } from 'react-router-dom';
 
-const Contact = () => {
+
 
 
 const Contact = () => {
@@ -52,5 +52,5 @@ const Contact = () => {
      
   )
 }
-}
+
 export default Contact
